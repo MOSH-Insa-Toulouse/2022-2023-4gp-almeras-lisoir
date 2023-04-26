@@ -13,15 +13,15 @@
   * [4.2. Schématique](#QuatriemeSection2)
   * [4.3. Placement des composants](#QuatriemeSection3)
   * [4.4. Visualisation 3D](#QuatriemeSection4)
-* [5. Développement de l'interface en Python](#CinquiemeSection)
-* [6. Fabrication du shield](#SixiemeSection)
-  * [6.1. Réalisation du PCB](#SixiemeSection1)
-  * [6.2. Perçage et soudure](#SixiemeSection2)
-* [7. Simulation](#SeptiemeSection)
-* [8. Tests et résultats](#HuigtiemeSection)
-  * [8.1. Banc de test](#HuigtiemeSection1)
-  * [8.2. Résultats obtenus](#HuigtiemeSection2)
-  * [8.3. Analyse des résultats et pistes d'améliorations](#HuigtiemeSection3)
+* [5. Fabrication du shield](#CinquiemeSection)
+  * [5.1. Réalisation du PCB](#CinquiemeSection1)
+  * [5.2. Perçage et soudure](#CinquiemeSection2)
+* [6. Développement de l'interface en Python](#SixiemeSection)
+* [7. Simulation avec LTSpice](#SeptiemeSection)
+* [8. Tests et résultats](#HuitiemeSection)
+  * [8.1. Banc de test](#HuitiemeSection1)
+  * [8.2. Résultats obtenus](#HuitiemeSection2)
+  * [8.3. Analyse des résultats et pistes d'améliorations](#HuitiemeSection3)
 * [9. Datasheet](#NeuviemeSection)
 * [Contacts](#DixiemeSection)
 
@@ -72,7 +72,7 @@ Notre binôme ne possède aucun téléphone Android et il n'était donc pas poss
 
 ## 3. Carte Arduino UNO et code associé <a id="TroisièmeSection"></a>
 
-Décrire ce que fait le code arduino
+Le code Arduino que nous avons écrit
 
 ## 4. KiCad <a id="QuatriemeSection"></a>
 
@@ -86,11 +86,25 @@ Décrire ce que fait le code arduino
  
 ### 4.4. Visualisation 3D <a id="QuatriemeSection4"></a>
 
-
-## 5. Développement de l'interface en Python <a id="CinquiemeSection"></a>
-
-## 6. Fabrication du shield <a id="SixiemeSection"></a>
-### 6.1 Réalisation du PCB <a id="SixiemeSection1"></a>
+## 5. Fabrication du shield <a id="CinquiemeSection"></a>
+### 5.1 Réalisation du PCB <a id="CinquiemeSection1"></a>
 "expliquer le process fait avec Cathy"
-## 6.2 Perçage et soudure
+## 5.2 Perçage et soudure <a id="CinquiemeSection2"></a>
 "mettre des petites photos"
+
+## 6. Développement de l'interface en Python <a id="SixiemeSection"></a>
+L'interface développée répond à plusieurs problématiques et présente différentes fonctionnalités.
+- Connexion automatique au port utilisé par la connexion avec l'Arduino (message pop-up selon le succès de la connection au port)
+- Etape préliminaire de calibration du capteur graphite
+- Affichage de deux graphiques défilant exprimant la variation de la résistance du flex sensor et du capteur graphite
+- Relecture et affichage en temps réel des données reçues pour les deux capteurs
+- Fermeture de la fenêtre et interruption de la communication avec le bouton Quit
+
+
+## 7. Tests et résultats
+### 7.1 Banc de test
+Pour produire notre data sheet, nous avons décidé de relever la résistance des deux capteurs pour différents angles de courbure.
+### 7.2 Résultats obtenus et analyse
+### 7.3 Regard critique sur les résultats
+
+## 8. Datasheet
