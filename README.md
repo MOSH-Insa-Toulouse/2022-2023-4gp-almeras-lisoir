@@ -1,4 +1,4 @@
-# 2022-2023-4gp-Alméras-Lisoir
+# Projet Capteur 4A Génie Physique - Nina Alméras & Emma Lisoir
 
 ## Sommaire
 * [1. Description du projet](#PremiereSection)
@@ -35,7 +35,10 @@ Ce projet s'étend sur le deuxième semestre de l'année 2022-2023 et a pour but
 ## 1.1 Caractéristiques et travaux de recherche préliminaires sur le capteur <a id="PremiereSection1"></a>
 
 Le capteur sur lequel nous avons mené nos recherches est un exemple de technologie low-tech. En effet, un article scientifique publié en 2014 met en évidence que du graphite déposé sur une bande de papier peut servir de jauge de contrainte. Le projet Capteur s'inspire largement des études et expériences présentées dans ce papier.
-"faire un résumé du papier et des explications physiques". 
+"faire un résumé du papier et des explications physiques".
+
+<p align="center"><img width="329" alt="image" src="https://user-images.githubusercontent.com/124165435/234648698-2a138793-281e-4adf-a231-edec8a0e3931.png">
+
 
 
 ## 1.2 Cours et formation <a id="PremiereSection2"></a>
@@ -50,7 +53,7 @@ Pour mener ce projet, nous avons d'abord suivi différents cours et TPs
 - Coursa fiche technique de la jauge de contrainte
 - Cours Github
 
-<img width="402" alt="image" src="https://user-images.githubusercontent.com/124165435/232909479-6e11000b-4ce8-4656-aaaf-82b67eb49942.png">
+<p align="center"><img width="402" alt="image" src="https://user-images.githubusercontent.com/124165435/232909479-6e11000b-4ce8-4656-aaaf-82b67eb49942.png">
 
 
 ## 2. Livrables du projet <a id="DeuxièmeSection"></a>
