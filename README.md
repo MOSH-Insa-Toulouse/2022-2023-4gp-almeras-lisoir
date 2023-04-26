@@ -88,8 +88,12 @@ Le code Arduino que nous avons écrit
 Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteur graphite. Lorsque le flex-sensor est plié, sa variation de résistance suit la contrainte de flexion. Afin de comparer en temps réel les résultats de mesures délivrées par le capteur graphite et le flex sensor, nous avons intégré ce dernier à noter PCB.
 
 ### 4.2. Schématique <a id="QuatriemeSection2"></a>
+<p align="center">![image](https://user-images.githubusercontent.com/124165435/234651326-b33ade35-73f8-4619-8972-2e98d2ce2b28.png)
+
 
 ### 4.3. Placement des composants <a id="QuatriemeSection3"></a>
+<p align="center">![image](https://user-images.githubusercontent.com/124165435/234651199-5bf7eeee-9214-45e1-918a-58303e8f62e6.png)
+
  
 ### 4.4. Visualisation 3D <a id="QuatriemeSection4"></a>
 
