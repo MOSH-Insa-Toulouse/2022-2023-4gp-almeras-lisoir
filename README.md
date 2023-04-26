@@ -32,16 +32,14 @@ Ce projet s'inscrit au sein de l'unité de formation "Du capteur au banc de test
 Ce projet s'étend sur le deuxième semestre de l'année 2022-2023 et a pour but de nous sensibiliser aux différentes étapes de conception et d'analyse pour l'utilisation d'un capteur.
 
 
-## 1.1 Caractéristiques et travaux de recherche préliminaires sur le capteur <a id="PremiereSection1"></a>
+### 1.1 Caractéristiques et travaux de recherche préliminaires sur le capteur <a id="PremiereSection1"></a>
 
 Le capteur sur lequel nous avons mené nos recherches est un exemple de technologie low-tech. En effet, un article scientifique publié en 2014 met en évidence que du graphite déposé sur une bande de papier peut servir de jauge de contrainte. Le projet Capteur s'inspire largement des études et expériences présentées dans ce papier.
 "faire un résumé du papier et des explications physiques".
 
 <p align="center"><img width="329" alt="image" src="https://user-images.githubusercontent.com/124165435/234648698-2a138793-281e-4adf-a231-edec8a0e3931.png">
 
-
-
-## 1.2 Cours et formation <a id="PremiereSection2"></a>
+### 1.2 Cours et formation <a id="PremiereSection2"></a>
 
 Pour mener ce projet, nous avons d'abord suivi différents cours et TPs
 - Introduction à la chaîne de mesure
