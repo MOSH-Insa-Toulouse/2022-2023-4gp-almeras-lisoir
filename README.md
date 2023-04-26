@@ -56,7 +56,7 @@ Pour mener ce projet, nous avons d'abord suivi différents cours et TPs
 
 ## 2. Livrables du projet <a id="DeuxièmeSection"></a>
 
-## 2.1 Livrables initiaux <a id="DeuxièmeSection1"></a>
+### 2.1 Livrables initiaux <a id="DeuxièmeSection1"></a>
 
 - Le shield PCB
 Un shield PCB devra être designé et fabriqué. Il sera ensuite connecté à une plaque Arduino UNO. Le shield doit contenir au minimum un amplificateur transimpédence, un module Bluetooth, et si possible un écran OLED et un encodeur rotatoire pour la calibration du capteur.
@@ -68,7 +68,7 @@ La carte Arduino fonctionnera avec un code permettant de mesurer la containte ap
 - Un protocole de test
 - La datasheet du capteur de déformation
 
-## 2.2 Révisions des livrables du projet <a id="DeuxièmeSection2"></a>
+### 2.2 Révisions des livrables du projet <a id="DeuxièmeSection2"></a>
 Notre binôme ne possède aucun téléphone Android et il n'était donc pas possible de créere une application APK et de transmettre les données par Bluetooth. Nous avons du rediscuter les livrables avc nos responsables de projet. Finalement, nous développons une interface en Python. Cette interface permet la réception des données envoyées par la carte Arduino, via une communication en RS-232 entre un ordinateur et la carte.
 
 Eon conclusion, notre système final présentera donc une carte Arduino. Deux jauges de contraintes (cpateur graphite et flex-sensor) ainsi qu'un écran OLED seront connectés à la carte Arduino. Il n'y aura pas de module Bluetooth. L'écran OLED affichera les résistances mesurées par les deux capteurs. Pour traiter et afficher les données en temps réel, la carte Arduino sera relié par un port série à un ordinateur et permettra l'analyse des données. L'interface permettra également la calibration du capteur graphite.
