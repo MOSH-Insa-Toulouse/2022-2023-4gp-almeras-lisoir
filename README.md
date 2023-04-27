@@ -86,14 +86,14 @@ Le code Arduino que nous avons écrit
 Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteur graphite. Lorsque le flex-sensor est plié, sa variation de résistance suit la contrainte de flexion. Afin de comparer en temps réel les résultats de mesures délivrées par le capteur graphite et le flex sensor, nous avons intégré ce dernier à noter PCB.
 
 ### 4.2. Schématique <a id="QuatriemeSection2"></a>
-<p align="center">![image](https://user-images.githubusercontent.com/124165435/234651326-b33ade35-73f8-4619-8972-2e98d2ce2b28.png)
-
+<p align="center"><img width="498" alt="image" src="https://user-images.githubusercontent.com/124165435/234853183-e293a26c-0e21-4e3e-af6e-2de6d5d85f0d.png">
 
 ### 4.3. Placement des composants <a id="QuatriemeSection3"></a>
-<p align="center">![image](https://user-images.githubusercontent.com/124165435/234651199-5bf7eeee-9214-45e1-918a-58303e8f62e6.png)
-
+<p align="center"><img width="448" alt="image" src="https://user-images.githubusercontent.com/124165435/234853043-2a99e37e-7576-4bbf-b96a-2a48ab394477.png">
  
 ### 4.4. Visualisation 3D <a id="QuatriemeSection4"></a>
+<p align="center"><img width="350" alt="image" src="https://user-images.githubusercontent.com/124165435/234853290-a2071ead-7724-451d-831e-413aeb7c9c3b.png">
+
 
 ## 5. Fabrication du shield <a id="CinquiemeSection"></a>
 ### 5.1 Réalisation du PCB <a id="CinquiemeSection1"></a>
