@@ -45,9 +45,9 @@ Pour mener ce projet, nous avons d'abord suivi différents cours et TPs
 - Introduction à la chaîne de mesure
 - TP développement d'un capteur à jauge de contrainte à base de crayon graphite
 - TP conception d'un circuit analogique pour interfacer le capteur à jauge de contrainte
-- TP programmation de microcontrôleurs et au développement d'un matériel open source,
-- TP shield électronique PCB dédié à l'interface du capteur de contrainte,
-- TP consacrés à la réalisation du banc de test de la jauge de contrainte,
+- TP programmation de microcontrôleurs et au développement d'un matériel open source
+- TP shield électronique PCB dédié à l'interface du capteur de contrainte
+- TP consacrés à la réalisation du banc de test de la jauge de contrainte
 - Coursa fiche technique de la jauge de contrainte
 - Cours Github
 
@@ -83,6 +83,7 @@ Le code Arduino que nous avons écrit
 * Amplificateur LTC1050
 * Ecran OLED
 * Flex sensor
+ 
 Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteur graphite. Lorsque le flex-sensor est plié, sa variation de résistance suit la contrainte de flexion. Afin de comparer en temps réel les résultats de mesures délivrées par le capteur graphite et le flex sensor, nous avons intégré ce dernier à noter PCB.
 
 ### 4.2. Schématique <a id="QuatriemeSection2"></a>
