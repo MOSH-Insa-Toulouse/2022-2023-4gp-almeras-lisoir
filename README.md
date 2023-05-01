@@ -28,15 +28,20 @@
 
 ## 1. Description du projet <a id="PremiereSection"></a>
 
-Ce projet s'inscrit au sein de l'unité de formation "Du capteur au banc de test en open source hardware". Ce cours est dispensé en quatrième année au sein du département de Génie Physique de l'INSA Toulouse.
-Ce projet s'étend sur le deuxième semestre de l'année 2022-2023 et a pour but de nous sensibiliser aux différentes étapes de conception et d'analyse pour l'utilisation d'un capteur.
-BALBBALBSDLKF?W
+Ce projet s'inscrit dans le cadre de l'unité de formation "Du capteur au banc de test en open source hardware". Ce cours est dispensé en quatrième année au sein du département de Génie Physique de l'INSA Toulouse.
+Ce projet s'étend sur le deuxième semestre de l'année 2022-2023 et a pour but de nous sensibiliser aux différentes étapes de conception et d'analyse utiles à la création d'un capteur.
 
 
 ### 1.1 Caractéristiques et travaux de recherche préliminaires sur le capteur <a id="PremiereSection1"></a>
 
-Le capteur sur lequel nous avons mené nos recherches est un exemple de technologie low-tech. En effet, un article scientifique publié en 2014 met en évidence que du graphite déposé sur une bande de papier peut servir de jauge de contrainte. Le projet Capteur s'inspire largement des études et expériences présentées dans ce papier.
-"faire un résumé du papier et des explications physiques".
+Le capteur sur lequel nous avons mené nos recherches . En effet, un article scientifique publié en 2014 met en évidence que du graphite déposé sur une bande de papier peut servir de jauge de contrainte. Le projet Capteur s'inspire largement des études et expériences présentées dans ce papier.
+
+Le KTY2000 est un exemple de technologie low-tech base de graphite. Ce projet s’inspire du travail mené par plusieurs scientifiques et publié dans [cet article] (https://www.nature.com/articles/srep03812) en 2014. En effet, les études ont révélé les nombreux avantages du carbone graphite. L’électronique à base de papier attire de plus en plus les ingénieur.es de par sa facilité d’approvisionnement, de fabrication et son faible coût. Il suffit dans notre cas de déposer une fine couche de graphite sur le substrat naturellement poreux pour former la base du capteur. Les mines de crayon sont constituées de réseaux percolés de fines poudres de graphite liées entre elles par des argiles, permettant d’obtenir après dépôt de fins films conducteurs non fabriqués en laboratoire. 
+
+Le système à l’étude est granulaire, autrement dit il existe une dépendance entre la conductivité électrique et l’espace moyen entre les nanoparticules de graphite. Ainsi, une déformation de la feuille de papier va modifier la conductivité globale de la couche de graphite, induisant des changements de résistances réversibles lors des déformations en compression ou en traction. Ceci constitue en fait le principe d'une jauge de contrainte. 
+L’expérience est réalisée avec différentes duretés de mine de crayon  (2H, HB, 2B). Les mesure de résistance pour chaque crayon sont réalisées en fonction de différents rayons de courbure (soit la déformation) ou de l’angle de flexion. Cela permet une caractérisation complète de chaque type de crayon. 
+
+Dans notre cas, les traces de crayon sont déposées sur du papier comme vu ci-dessous. Ceci constitue le capteur et sera connecté à un système de mesures externe via des pinces crocodiles reliées à un PCB et branché sur une carte Arduino Uno.
 
 <p align="center"><img width="329" alt="image" src="https://user-images.githubusercontent.com/124165435/234648698-2a138793-281e-4adf-a231-edec8a0e3931.png">
 
@@ -67,12 +72,10 @@ La carte Arduino fonctionnera avec un code permettant de mesurer la containte ap
 
 - Une application Android APK
 - Un protocole de test
-- La datasheet du capteur de déformation
+- La datasheet du capteur de contrainte
 
 ### 2.2 Révisions des livrables du projet <a id="DeuxièmeSection2"></a>
-Notre binôme ne possède aucun téléphone Android et il n'était donc pas possible de créere une application APK et de transmettre les données par Bluetooth. Nous avons du rediscuter les livrables avc nos responsables de projet. Finalement, nous développons une interface en Python. Cette interface permet la réception des données envoyées par la carte Arduino, via une communication en RS-232 entre un ordinateur et la carte.
-
-Eon conclusion, notre système final présentera donc une carte Arduino. Deux jauges de contraintes (cpateur graphite et flex-sensor) ainsi qu'un écran OLED seront connectés à la carte Arduino. Il n'y aura pas de module Bluetooth. L'écran OLED affichera les résistances mesurées par les deux capteurs. Pour traiter et afficher les données en temps réel, la carte Arduino sera relié par un port série à un ordinateur et permettra l'analyse des données. L'interface permettra également la calibration du capteur graphite.
+Notre binôme ne possède aucun téléphone Android et il n'était donc pas possible de créere une application APK et de transmettre les données par Bluetooth. Nous avons du rediscuter les livrables avc nos responsables de projet. Finalement, nous développons une interface en Python et le module Bluetooth est supprimé. En effet, l'interface permet la réception des données envoyées par la carte Arduino, via une communication USB entre un ordinateur et la carte (port série). L'interface permet également la calibration du capteur graphite.De plus, un écran OLED affichera en temps réel de la résistance du capteur KTY2000 et d'un flex sensor Spectra Symbol. 
 
 ## 3. Carte Arduino UNO et code associé <a id="TroisièmeSection"></a>
 
@@ -102,9 +105,8 @@ Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteu
 
 Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physique et au Génie Électrique et Informatique de l'INSA Toulouse. Les manipulations ont été faites avec l'aide de Catherine Crouzet.
 
-"expliquer le process fait avec Cathy"
 ## 5.2 Perçage et soudure <a id="CinquiemeSection2"></a>
-"mettre des petites photos"
+
 
 ## 6. Développement de l'interface en Python <a id="SixiemeSection"></a>
 L'interface développée répond à plusieurs problématiques et présente différentes fonctionnalités.
@@ -116,21 +118,20 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 
 <p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124165435/235492835-74331426-96cb-40d1-a32b-5f7def3279b2.png">
 
-
-
 ## 7. Tests et résultats
 Voici le setup que nous avons mis en place pour pouvoir utiliser notre capteur alias la jauge de contrainte : 
 
 <p align="center"><img width="400" alt="image" src="https://user-images.githubusercontent.com/124166161/235499366-d5575645-165a-4a30-af12-c5741c56be6b.png">
 
 ### 7.1 Banc de test
-Pour produire notre datasheet, nous avons décidé de relever la variation (relative ou non) de résistance de notre capteur en fonction de l'angle de flexion et de la déformation du capteur. Nous avons construit un banc de test avec l'aide de disques de papier cartonné de différents rayons de courbure, visibles ci-dessous. Les mesures ont été réalisées pour une déformation en traction et en compression, le tout en utilisant des crayons graphite de différentes duretés : 2B, HB et 2H.
+Pour caractériser notre capteur, nous relevons la variation (relative ou non) de résistance de notre capteur en fonction de l'angle de flexion et de la déformation du capteur. Nous avons construit un banc de test avec l'aide de disques de papier cartonné de différents rayons de courbure, visibles ci-dessous. Les mesures ont été réalisées pour une déformation en traction et en compression, le tout en utilisant des crayons graphite de différentes duretés : 2B, HB et 2H.
 <p align="center"><img width="250" alt="image" src="https://user-images.githubusercontent.com/124166161/235498021-97354d74-e4f6-4dfd-b12c-69112cfb68dd.png">
-
 
  
 ### 7.2 Résultats obtenus et analyse
+Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
+ 
 ### 7.3 Regard critique sur les résultats
 
 ## 8. Datasheet
- 
+La datasheet du KTY2002 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
