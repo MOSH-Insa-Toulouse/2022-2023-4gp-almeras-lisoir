@@ -118,8 +118,7 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 
 
 ## 7. Tests et résultats
-
-Voici le setup que nous avons mis en place pour réaliser la datasheet de notre capteur : 
+Voici le setup que nous avons mis en place pour pouvoir utiliser notre capteur alias la jauge de contrainte : 
 
 <p align="center"><img width="400" alt="image" src="https://user-images.githubusercontent.com/124166161/235499366-d5575645-165a-4a30-af12-c5741c56be6b.png">
 
