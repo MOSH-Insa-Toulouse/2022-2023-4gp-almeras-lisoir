@@ -122,7 +122,7 @@ Le programme Python et le fichier designer est consultable [ici](https://github.
 
 ## 7. Tests et résultats
 
-Voici le setup d'utilisation du KTY2000 .
+Voici le setup d'utilisation du KTY2000.
 <p align="center"><img width="400" alt="image" src="https://user-images.githubusercontent.com/124166161/235499366-d5575645-165a-4a30-af12-c5741c56be6b.png">
 
 ### 7.1 Banc de test
@@ -136,4 +136,4 @@ Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-To
 ### 7.3 Regard critique sur les résultats
 
 ## 8. Datasheet
-La datasheet du KTY2002 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
+La datasheet du KTY2000 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
