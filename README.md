@@ -64,10 +64,10 @@ Pour mener ce projet, nous avons d'abord suivi différents cours et TPs.
 ### 2.1 Livrables initiaux <a id="DeuxièmeSection1"></a>
 
 * Le shield PCB
- Un shield PCB devra être designé et fabriqué. Il sera ensuite connecté à une plaque Arduino UNO. Le shield doit contenir au minimum un amplificateur transimpédence, un module Bluetooth, et si possible un écran OLED et un encodeur rotatoire pour la calibration du capteur.
+Un shield PCB devra être designé et fabriqué. Il sera ensuite connecté à une plaque Arduino UNO. Le shield doit contenir au minimum un amplificateur transimpédence, un module Bluetooth, et si possible un écran OLED et un encodeur rotatoire pour la calibration du capteur.
 
 * La carte Arduino UNO
- La carte Arduino fonctionnera avec un code permettant de mesurer la containte appliquée sur le capteur. Si besoin, la carte devra aussi contrôler le module Bluetooth, l'écran OLED et l'encodeur rotatoire.
+La carte Arduino fonctionnera avec un code permettant de mesurer la containte appliquée sur le capteur. Si besoin, la carte devra aussi contrôler le module Bluetooth, l'écran OLED et l'encodeur rotatoire.
 
 * Une application Android APK
 * Un protocole de test
@@ -80,7 +80,7 @@ Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteu
 ## 3. Carte Arduino UNO et code associé <a id="TroisièmeSection"></a>
 
 Le code Arduino est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Arduino).
-Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résistance-angle du flex senor, la réception des mesures faites par les deux capteurs, l'envoi de données via un port série.
+Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résistance-angle du flex sensor, la réception des mesures faites par les deux capteurs, l'envoi de données via un port série.
 
 ## 4. KiCad <a id="QuatriemeSection"></a>
 
@@ -90,7 +90,7 @@ Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résist
 * Flex sensor
 
 ### 4.2. Schématique <a id="QuatriemeSection2"></a>
-<p align="center"><img width="498" alt="image" src="https://user-images.githubusercontent.com/124165435/234853183-e293a26c-0e21-4e3e-af6e-2de6d5d85f0d.png">
+<p align="center"><img width="700" alt="image" src="https://user-images.githubusercontent.com/124165435/234853183-e293a26c-0e21-4e3e-af6e-2de6d5d85f0d.png">
 
 ### 4.3. Placement des composants <a id="QuatriemeSection3"></a>
 <p align="center"><img width="448" alt="image" src="https://user-images.githubusercontent.com/124165435/234853043-2a99e37e-7576-4bbf-b96a-2a48ab394477.png">
