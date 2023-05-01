@@ -112,6 +112,9 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 - Relecture et affichage en temps réel des données reçues pour les deux capteurs
 - Fermeture de la fenêtre et interruption de la communication avec le bouton Quit
 
+<p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124165435/235492835-74331426-96cb-40d1-a32b-5f7def3279b2.png">
+
+
 
 ## 7. Tests et résultats
 ### 7.1 Banc de test
