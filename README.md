@@ -46,7 +46,7 @@ Dans notre cas, les traces de crayon sont déposées sur du papier comme vu ci-d
 
 ### 1.2 Cours et formation <a id="PremiereSection2"></a>
 
-Pour mener ce projet, nous avons d'abord suivi différents cours et TPs
+Pour mener ce projet, nous avons d'abord suivi différents cours et TPs.
 - Introduction à la chaîne de mesure
 - TP développement d'un capteur à jauge de contrainte à base de crayon graphite
 - TP conception d'un circuit analogique pour interfacer le capteur à jauge de contrainte
