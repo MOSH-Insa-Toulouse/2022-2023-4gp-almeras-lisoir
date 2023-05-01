@@ -6,8 +6,8 @@
   * [1.2. Cours et formation](#PremiereSection2)
 * [2. Livrables](#DeuxiemeSection)
   * [2.1. Livrables initiaux](#DeuxiemeSection1)
-  * [2.2. Rediscussion des attentes](#DeuxiemeSection2)
-* [3. Arduino](#TroisiemeSection)
+  * [2.2. Révisions des livrables du projet](#DeuxiemeSection2)
+* [3. Carte Arduino UNO et code associé](#TroisiemeSection)
 * [4. KiCad](#QuatriemeSection)
   * [4.1. Symboles et empreintes des composants](#QuatriemeSection1)
   * [4.2. Schématique](#QuatriemeSection2)
@@ -17,13 +17,12 @@
   * [5.1. Réalisation du PCB](#CinquiemeSection1)
   * [5.2. Perçage et soudure](#CinquiemeSection2)
 * [6. Développement de l'interface en Python](#SixiemeSection)
-* [7. Simulation avec LTSpice](#SeptiemeSection)
-* [8. Tests et résultats](#HuitiemeSection)
-  * [8.1. Banc de test](#HuitiemeSection1)
-  * [8.2. Résultats obtenus](#HuitiemeSection2)
-  * [8.3. Analyse des résultats et pistes d'améliorations](#HuitiemeSection3)
-* [9. Datasheet](#NeuviemeSection)
-* [Contacts](#DixiemeSection)
+* [7. Tests et résultats](#SeptiemeSection)
+  * [7.1. Banc de test](#HuitiemeSection1)
+  * [7.2. Résultats obtenus et analyses](#HuitiemeSection2)
+  * [7.3. Regard critique sur les résultats](#HuitiemeSection3)
+* [8. Datasheet](#NeuviemeSection)
+
 
 
 ## 1. Description du projet <a id="PremiereSection"></a>
@@ -128,7 +127,7 @@ Pour caractériser notre capteur, nous relevons la variation (relative ou non) d
 <p align="center"><img width="250" alt="image" src="https://user-images.githubusercontent.com/124166161/235498021-97354d74-e4f6-4dfd-b12c-69112cfb68dd.png">
 
  
-### 7.2 Résultats obtenus et analyse
+### 7.2 Résultats obtenus et analyses
 Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
  
 ### 7.3 Regard critique sur les résultats
