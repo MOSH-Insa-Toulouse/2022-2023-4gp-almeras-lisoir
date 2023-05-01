@@ -117,6 +117,11 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 
 
 ## 7. Tests et résultats
+
+Voici le setup que nous avons utilisé pour réaliser la datasheet de notre capteur : 
+
+<p align="center"><img width="400" alt="image" src="https://user-images.githubusercontent.com/124166161/235499366-d5575645-165a-4a30-af12-c5741c56be6b.png">
+
 ### 7.1 Banc de test
 Pour produire notre datasheet, nous avons décidé de relever la résistance de notre capteur de différentes façons : . Nous avons construit un banc de test avec l'aide de disques de papier cartonné de différents rayons de courbure.
 <p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124166161/235498021-97354d74-e4f6-4dfd-b12c-69112cfb68dd.png">
