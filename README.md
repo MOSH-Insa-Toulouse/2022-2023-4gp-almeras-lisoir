@@ -116,7 +116,7 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 
 ## 7. Tests et résultats
 ### 7.1 Banc de test
-Pour produire notre data sheet, nous avons décidé de mesurer la résistance des deux capteurs pour différents angles de courbure. Les résultats de mesures sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
+Pour caractériser notre capteur graphite, nous avons décidé de mesurer la résistance des deux capteurs pour différents angles de courbure. Les résultats de mesures sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
 ### 7.2 Résultats obtenus et analyse
 ### 7.3 Regard critique sur les résultats
 
