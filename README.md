@@ -28,7 +28,7 @@
 
 ## 1. Description du projet <a id="PremiereSection"></a>
 
-Ce projet s'inscrit au sein de l'unité de formation "Du capteur au banc de test en open source hardware". Ce cours est dispensé en quatrième année au sein du département de Génie Physique de l'INSA Toulouse.
+Ce projet s'inscrit dans le cadre de l'unité de formation "Du capteur au banc de test en open source hardware". Ce cours est dispensé en quatrième année au sein du département de Génie Physique de l'INSA Toulouse.
 Ce projet s'étend sur le deuxième semestre de l'année 2022-2023 et a pour but de nous sensibiliser aux différentes étapes de conception et d'analyse pour l'utilisation d'un capteur.
 
 
@@ -114,12 +114,11 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 
 <p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124165435/235492835-74331426-96cb-40d1-a32b-5f7def3279b2.png">
 
-
-
 ## 7. Tests et résultats
 ### 7.1 Banc de test
-Pour produire notre data sheet, nous avons décidé de relever la résistance des deux capteurs pour différents angles de courbure.
+Pour produire notre data sheet, nous avons décidé de mesurer la résistance des deux capteurs pour différents angles de courbure. Les résultats de mesures sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
 ### 7.2 Résultats obtenus et analyse
 ### 7.3 Regard critique sur les résultats
 
 ## 8. Datasheet
+La datasheet est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
