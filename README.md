@@ -116,7 +116,7 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 - Relecture et affichage en temps réel des données reçues pour les deux capteurs
 - Fermeture de la fenêtre et interruption de la communication avec le bouton Quit
 
-Le programme Python et le fichier designer est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Interface%20Python).
+Le programme Python et le fichier designer sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Interface%20Python).
 
 <p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124165435/235492835-74331426-96cb-40d1-a32b-5f7def3279b2.png">
 
