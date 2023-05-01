@@ -63,22 +63,24 @@ Pour mener ce projet, nous avons d'abord suivi différents cours et TPs
 
 ### 2.1 Livrables initiaux <a id="DeuxièmeSection1"></a>
 
-- Le shield PCB
+* Le shield PCB
 Un shield PCB devra être designé et fabriqué. Il sera ensuite connecté à une plaque Arduino UNO. Le shield doit contenir au minimum un amplificateur transimpédence, un module Bluetooth, et si possible un écran OLED et un encodeur rotatoire pour la calibration du capteur.
 
-- La carte Arduino UNO 
+* La carte Arduino UNO 
 La carte Arduino fonctionnera avec un code permettant de mesurer la containte appliquée sur le capteur. Si besoin, la carte devra aussi contrôler le module Bluetooth, l'écran OLED et l'encodeur rotatoire.
 
-- Une application Android APK
-- Un protocole de test
-- La datasheet du capteur de contrainte
+* Une application Android APK
+* Un protocole de test
+* La datasheet du capteur de contrainte
 
 ### 2.2 Révisions des livrables du projet <a id="DeuxièmeSection2"></a>
-Notre binôme ne possède aucun téléphone Android et il n'était donc pas possible de créere une application APK et de transmettre les données par Bluetooth. Nous avons du rediscuter les livrables avc nos responsables de projet. Finalement, nous développons une interface en Python et le module Bluetooth est supprimé. En effet, l'interface permet la réception des données envoyées par la carte Arduino, via une communication USB entre un ordinateur et la carte (port série). L'interface permet également la calibration du capteur graphite.De plus, un écran OLED affichera en temps réel de la résistance du capteur KTY2000 et d'un flex sensor Spectra Symbol. 
+Notre binôme ne possède aucun téléphone Android et il n'était donc pas possible de créere une application APK et de transmettre les données par Bluetooth. Nous avons du rediscuter les livrables avc nos responsables de projet. Finalement, nous développons une interface en Python et le module Bluetooth est supprimé. En effet, l'interface permet la réception des données envoyées par la carte Arduino, via une communication USB entre un ordinateur et la carte (port série). L'interface permet également la calibration du capteur graphite. De plus, un écran OLED affichera en temps réel de la résistance du capteur KTY2000 et d'un flex sensor Spectra Symbol.
+Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteur graphite. Lorsque le flex-sensor est plié, sa variation de résistance suit la contrainte de flexion.
 
 ## 3. Carte Arduino UNO et code associé <a id="TroisièmeSection"></a>
 
-Le code Arduino que nous avons écrit
+Le code Arduino est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Arduino).
+Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résistance-angle du flex senor, la réception des mesures faites par les deux capteurs, l'envoi de données via un port série.
 
 ## 4. KiCad <a id="QuatriemeSection"></a>
 
@@ -86,8 +88,6 @@ Le code Arduino que nous avons écrit
 * Amplificateur LTC1050
 * Ecran OLED
 * Flex sensor
- 
-Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteur graphite. Lorsque le flex-sensor est plié, sa variation de résistance suit la contrainte de flexion. Afin de comparer en temps réel les résultats de mesures délivrées par le capteur graphite et le flex sensor, nous avons intégré ce dernier à noter PCB.
 
 ### 4.2. Schématique <a id="QuatriemeSection2"></a>
 <p align="center"><img width="498" alt="image" src="https://user-images.githubusercontent.com/124165435/234853183-e293a26c-0e21-4e3e-af6e-2de6d5d85f0d.png">
@@ -102,7 +102,7 @@ Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteu
 ## 5. Fabrication du shield <a id="CinquiemeSection"></a>
 ### 5.1 Réalisation du PCB <a id="CinquiemeSection1"></a>
 
-Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physique et au Génie Électrique et Informatique de l'INSA Toulouse. Les manipulations ont été faites avec l'aide de Catherine Crouzet.
+Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physique et au Génie Électrique et Informatique de l'INSA Toulouse. Les manipulations ont été faites avec l'aide de Catherine Crouzet. La modélisation du PCB fait sur [KiCad](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/KiCad) a été imprimé sur du papier tranparent. Ce motif a été ensuite transféré par UVs  sur la plaquette. À l'aide d'un révelateur, la partie non insolée  de la résine a été retiré. La plaquette d'expoxy a été ensuite placée dans un bain de perchlorure de fer pour que le cuivre non protégé par la résine soit retiré de la plaquette. Enfin, la plaque a été nettoyé des dernières traces de résine avec de l'acétone.
 
 ## 5.2 Perçage et soudure <a id="CinquiemeSection2"></a>
 <p align="center"><img width="350" alt="image" src="https://user-images.githubusercontent.com/124166161/235507646-271bc19c-6042-436d-ab8f-c0edf065983b.png">
@@ -116,11 +116,13 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 - Relecture et affichage en temps réel des données reçues pour les deux capteurs
 - Fermeture de la fenêtre et interruption de la communication avec le bouton Quit
 
+Le programme Python et le fichier designer est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Interface%20Python).
+
 <p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124165435/235492835-74331426-96cb-40d1-a32b-5f7def3279b2.png">
 
 ## 7. Tests et résultats
-Voici le setup que nous avons mis en place pour pouvoir utiliser notre capteur alias la jauge de contrainte : 
 
+Voici le setup d'utilisation du KTY2000 .
 <p align="center"><img width="400" alt="image" src="https://user-images.githubusercontent.com/124166161/235499366-d5575645-165a-4a30-af12-c5741c56be6b.png">
 
 ### 7.1 Banc de test
@@ -132,8 +134,6 @@ Pour caractériser notre capteur, nous relevons la variation (relative ou non) d
 Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
  
 ### 7.3 Regard critique sur les résultats
-Il est important de souligner la variabilité des conditions expérimentales. Entre chaque relevé de points et malgré le fait que les pinces crocodiles sans dents étaient bien fixées, il se peut que l’attache du capteur ait bougée. Les résultats sont imprécis et pour certains discutables au vu de la qualité du montage mais suivent la tendance attendue, en respectant les lois physiques. 
-En termes de pistes d'améliorations des résultats, il serait interessant 
- 
+
 ## 8. Datasheet
 La datasheet du KTY2002 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
