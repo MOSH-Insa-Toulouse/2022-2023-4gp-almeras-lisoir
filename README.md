@@ -132,6 +132,8 @@ Pour caractériser notre capteur, nous relevons la variation (relative ou non) d
 Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
  
 ### 7.3 Regard critique sur les résultats
-
+Il est important de souligner la variabilité des conditions expérimentales. Entre chaque relevé de points et malgré le fait que les pinces crocodiles sans dents étaient bien fixées, il se peut que l’attache du capteur ait bougée. Les résultats sont imprécis et pour certains discutables au vu de la qualité du montage mais suivent la tendance attendue, en respectant les lois physiques. 
+En termes de pistes d'améliorations des résultats, il serait interessant 
+ 
 ## 8. Datasheet
 La datasheet du KTY2002 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
