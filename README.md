@@ -105,6 +105,7 @@ Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteu
 Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physique et au Génie Électrique et Informatique de l'INSA Toulouse. Les manipulations ont été faites avec l'aide de Catherine Crouzet.
 
 ## 5.2 Perçage et soudure <a id="CinquiemeSection2"></a>
+<p align="center"><img width="350" alt="image" src="https://user-images.githubusercontent.com/124166161/235507646-271bc19c-6042-436d-ab8f-c0edf065983b.png">
 
 
 ## 6. Développement de l'interface en Python <a id="SixiemeSection"></a>
