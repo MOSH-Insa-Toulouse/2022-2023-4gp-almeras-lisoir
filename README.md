@@ -50,9 +50,9 @@ Pour mener ce projet, nous avons d'abord suivi différents cours et TPs.
 - Introduction à la chaîne de mesure
 - TP développement d'un capteur à jauge de contrainte à base de crayon graphite
 - TP conception d'un circuit analogique pour interfacer le capteur à jauge de contrainte
-- TP programmation de microcontrôleurs et au développement d'un matériel open source
+- TP programmation de microcontrôleurs et développement d'un matériel open source
 - TP shield électronique PCB dédié à l'interface du capteur de contrainte
-- TP consacrés à la réalisation du banc de test de la jauge de contrainte
+- TP réalisation du banc de test de la jauge de contrainte
 - Cours fiche technique de la jauge de contrainte
 - Cours Github
 
