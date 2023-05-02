@@ -104,7 +104,7 @@ Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résist
 
 Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physique et au Génie Électrique et Informatique de l'INSA Toulouse. Les manipulations ont été faites avec l'aide de Catherine Crouzet. La modélisation du PCB fait sur [KiCad](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/KiCad) a été imprimé sur du papier tranparent. Ce motif a été ensuite transféré par UVs  sur la plaquette. À l'aide d'un révelateur, la partie non insolée  de la résine a été retiré. La plaquette d'expoxy a été ensuite placée dans un bain de perchlorure de fer pour que le cuivre non protégé par la résine soit retiré de la plaquette. Enfin, la plaque a été nettoyé des dernières traces de résine avec de l'acétone.
 
-## 5.2 Perçage et soudure <a id="CinquiemeSection2"></a>
+### 5.2 Perçage et soudure <a id="CinquiemeSection2"></a>
 <p align="center"><img width="230" alt="image" src="https://user-images.githubusercontent.com/124166161/235507646-271bc19c-6042-436d-ab8f-c0edf065983b.png">
 
 
@@ -133,12 +133,15 @@ Pour caractériser notre capteur, nous relevons la variation (relative ou non) d
  
 ### 7.2 Résultats obtenus et analyses <a id="SeptiemeSection2"></a>
 Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
- 
+
+ Les deux graphes suivant représentent la variation de la résistance relative (en %) en fonction de la déformation appliquée - compression et traction.
 <p align="center"><img width="649" alt="image" src="https://user-images.githubusercontent.com/124165435/235679810-8c07bf9b-abfc-42d7-b863-36cdf839b4a3.png">
 <p align="center"><img width="649" alt="image" src="https://user-images.githubusercontent.com/124165435/235679986-d3eed696-fc22-417e-b762-bcdb572f7c95.png">
-
-
  
+Les mines les plus tendres contiennent une proportion plus élevée de particules de graphite. C’est donc pour cette raison que les traces de ce type de crayon paraissent plus foncées sur le papier. À l’inverse, les mines les plus dures contiennent beaucoup de liants argileux et apparaissent plus claires. Cela explique également que les résistances de mines de crayon les plus tendres sont plus faibles que les mines de crayon les plus dures. En effet, sous la traction, les particules de graphite sont davantage écartées les unes des autres favorisant la déconnexion des voies de conduction : le courant est donc minime, la résistance quant à elle augmente.  Sous compression, les particules de graphite contenues dans la trace de crayon se rapprochent, facilitant la conduction du courant à travers le réseau de percolation : la résistance s’abaisse naturellement.
+
+Cette caractéristique est illustrée à travers la variation relative de résistance en fonction de la déformation du capteur. En effet, un crayon qui contient moins de particules de graphite comme le 2H dépose naturellement moins de graphite sur le substrat. Les variations de résistance sont donc plus significatives comme beaucoup de chemins de percolations sont créés ou rompus contrairement au 2B où les déformations n’induisent que de faibles variations relatives de résistance. 
+
 ### 7.3 Regard critique sur les résultats <a id="SeptiemeSection3"></a>
 Il est important de souligner la variabilité des conditions expérimentales. Entre chaque relevé de points et malgré le fait que les pinces crocodiles sans dents étaient bien fixées, il se peut que l’attache du capteur ait bougée. Les résultats sont imprécis et pour certains discutables au vu de la qualité du montage mais suivent tout de même les lois physiques. 
 
@@ -146,9 +149,9 @@ Nous pourrions amener plusieurs pistes d'améliorations à notre projet :
 
 - Améliorer notre banc de test afin de garantir des résultats optimaux mais surtout pour augmenter sa durée de vie et sa résistance. Par exemple, nous pourrions concevoir de le fabriquer par l'intermédiaire d'une imprimante 3D. 
 
-- Améliorer notre PCB en y ajoutant un potentiomètre digital à la place de R2 afin de travailler sur une plus grande gamme de résistance. La tension de sortie serait aisni modulée en fonction de la valeur de la résistance variable. 
+- Améliorer notre PCB en y ajoutant un potentiomètre digital à la place de R2 afin de travailler sur une plus grande gamme de résistance. La tension de sortie serait ainsi modulée en fonction de la valeur de la résistance variable. 
 
 - Améliorer le setup expérimental en commençant par l'ergonomie de notre PCB afin de le rendre plus fonctionnel pour la réalisation des mesures de résistance. Penser à un meilleur emplacement pour les différents composants, à un système d'accroche pour l'écran OLED, mais aussi pour les pinces crocodile dans le but de limiter le plus possible la variabilité des conditions expérimentales. 
 
 ## 8. Datasheet <a id="HuitiemeSection"></a>
-La datasheet du KTY2000 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf). Relativement complète, elle reprend tous les concepts physiques ainsi que les résultats de mesures et leur analyse. D'autres courbes illustrant la variation de résistance en fonction de l'angle de flexion y figurent, venant completer les affirmations énoncées tout le long de ce rendu. 
+La datasheet du KTY2000 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
