@@ -156,4 +156,4 @@ Nous pourrions amener plusieurs pistes d'améliorations à notre projet :
 - Améliorer le setup expérimental en commençant par l'ergonomie de notre PCB afin de le rendre plus fonctionnel pour la réalisation des mesures de résistance. Penser à un meilleur emplacement pour les différents composants, à un système d'accroche pour l'écran OLED, mais aussi pour les pinces crocodile dans le but de limiter le plus possible la variabilité des conditions expérimentales. 
 
 ## 8. Datasheet <a id="HuitiemeSection"></a>
-La datasheet du KTY2000 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
+La datasheet du KTY2000 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf). Relativement complète, elle reprend tous les concepts physiques ainsi que les résultats de mesures et leur analyse. D'autres courbes illustrant la variation de résistance en fonction de l'angle de flexion y figurent, venant completer les affirmations énoncées tout le long de ce rendu. 
