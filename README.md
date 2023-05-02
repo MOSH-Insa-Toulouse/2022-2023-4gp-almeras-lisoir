@@ -134,6 +134,15 @@ Pour caractériser notre capteur, nous relevons la variation (relative ou non) d
 Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
  
 ### 7.3 Regard critique sur les résultats
+Il est important de souligner la variabilité des conditions expérimentales. Entre chaque relevé de points et malgré le fait que les pinces crocodiles sans dents étaient bien fixées, il se peut que l’attache du capteur ait bougée. Les résultats sont imprécis et pour certains discutables au vu de la qualité du montage mais suivent tout de même les lois physiques. 
+
+Nous pourrions amener plusieurs pistes d'améliorations à notre projet :
+
+- Améliorer notre banc de test afin de garantir des résultats optimaux mais surtout pour augmenter sa durée de vie et sa résistance. Par exemple, nous pourrions concevoir de le fabriquer par l'intermédiaire d'une imprimante 3D. 
+
+- Améliorer notre PCB en y ajoutant un potentiomètre digital à la place de R2 afin de travailler sur une plus grande gamme de résistance. La tension de sortie serait aisni modulée en fonction de la valeur de la résistance variable. 
+
+- Améliorer le setup expérimental en commençant par l'ergonomie de notre PCB afin de le rendre plus fonctionnel pour la réalisation des mesures de résistance. Penser à un meilleur emplacement pour les différents composants, à un système d'accroche pour l'écran OLED, mais aussi pour les pinces crocodile dans le but de limiter le plus possible la variabilité des conditions expérimentales. 
 
 ## 8. Datasheet
 La datasheet du KTY2000 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
