@@ -18,10 +18,10 @@
   * [5.2. Perçage et soudure](#CinquiemeSection2)
 * [6. Développement de l'interface en Python](#SixiemeSection)
 * [7. Tests et résultats](#SeptiemeSection)
-  * [7.1. Banc de test](#HuitiemeSection1)
-  * [7.2. Résultats obtenus et analyses](#HuitiemeSection2)
-  * [7.3. Regard critique sur les résultats](#HuitiemeSection3)
-* [8. Datasheet](#NeuviemeSection)
+  * [7.1. Banc de test](#SeptiemeSection1)
+  * [7.2. Résultats obtenus et analyses](#SeptiemeSection2)
+  * [7.3. Regard critique sur les résultats](#SeptiemeSection3)
+* [8. Datasheet](#HuitiemeSection)
 
 
 
@@ -120,29 +120,29 @@ Le programme Python et le fichier designer sont consultables [ici](https://githu
 
 <p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124165435/235492835-74331426-96cb-40d1-a32b-5f7def3279b2.png">
 
-## 7. Tests et résultats
+## 7. Tests et résultats <a id="SeptiemeSection"></a>
 
 Voici le setup d'utilisation du KTY2000.
 <p align="center"><img width="400" alt="image" src="https://user-images.githubusercontent.com/124166161/235499366-d5575645-165a-4a30-af12-c5741c56be6b.png">
 
-### 7.1 Banc de test
+### 7.1 Banc de test <a id="SeptiemeSection1"></a>
 Pour caractériser notre capteur, nous relevons la variation (relative ou non) de résistance de notre capteur en fonction de l'angle de flexion et de la déformation du capteur. Nous avons construit un banc de test avec l'aide de disques de papier cartonné de différents rayons de courbure, visibles ci-dessous. Les mesures ont été réalisées pour une déformation en traction et en compression, le tout en utilisant des crayons graphite de différentes duretés : 2B, HB et 2H.
 <p align="center"><img width="250" alt="image" src="https://user-images.githubusercontent.com/124166161/235498021-97354d74-e4f6-4dfd-b12c-69112cfb68dd.png">
 
  
-### 7.2 Résultats obtenus et analyses
+### 7.2 Résultats obtenus et analyses <a id="SeptiemeSection2"></a>
 Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
  
-### 7.3 Regard critique sur les résultats
+### 7.3 Regard critique sur les résultats <a id="SeptiemeSection3"></a>
 Il est important de souligner la variabilité des conditions expérimentales. Entre chaque relevé de points et malgré le fait que les pinces crocodiles sans dents étaient bien fixées, il se peut que l’attache du capteur ait bougée. Les résultats sont imprécis et pour certains discutables au vu de la qualité du montage mais suivent tout de même les lois physiques. 
 
 Nous pourrions amener plusieurs pistes d'améliorations à notre projet :
 
 - Améliorer notre banc de test afin de garantir des résultats optimaux mais surtout pour augmenter sa durée de vie et sa résistance. Par exemple, nous pourrions concevoir de le fabriquer par l'intermédiaire d'une imprimante 3D. 
 
-- Améliorer notre PCB en y ajoutant un potentiomètre digital à la place de R2 afin de travailler sur une plus grande gamme de résistance. La tension de sortie serait ainsi modulée en fonction de la valeur de la résistance variable. 
+- Améliorer notre PCB en y ajoutant un potentiomètre digital à la place de R2 afin de travailler sur une plus grande gamme de résistance. La tension de sortie serait aisni modulée en fonction de la valeur de la résistance variable. 
 
-- Améliorer le setup expérimental en commençant par l'ergonomie de notre PCB pour le rendre plus fonctionnel lors de la réalisation des mesures. Penser à un meilleur emplacement pour les différents composants, à un système d'accroche pour l'écran OLED, mais aussi pour les pinces crocodile dans le but de limiter le plus possible la variabilité des conditions expérimentales. 
+- Améliorer le setup expérimental en commençant par l'ergonomie de notre PCB afin de le rendre plus fonctionnel pour la réalisation des mesures de résistance. Penser à un meilleur emplacement pour les différents composants, à un système d'accroche pour l'écran OLED, mais aussi pour les pinces crocodile dans le but de limiter le plus possible la variabilité des conditions expérimentales. 
 
-## 8. Datasheet
+## 8. Datasheet <a id="HuitiemeSection"></a>
 La datasheet du KTY2000 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf).
