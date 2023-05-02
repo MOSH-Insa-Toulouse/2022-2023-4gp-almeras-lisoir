@@ -116,7 +116,7 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 - Relecture et affichage en temps réel des données reçues pour les deux capteurs
 - Fermeture de la fenêtre et interruption de la communication avec le bouton Quit
 
-L'apparence de l'interface a été faite avec Qt Designer. Cet outil permet de créer une interface utilisateur "what-you-see-is-what-you-get (WYSIWYG)", ce qui permet un gain de temps et d'efficacité. 
+L'apparence de l'interface a été faite avec Qt Designer. Cet outil permet de créer une interface utilisateur "what-you-see-is-what-you-get" (WYSIWYG), ce qui permet un gain de temps et d'efficacité. 
 Le programme Python et le fichier Qt designer sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Interface%20Python).
 
 <p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124165435/235492835-74331426-96cb-40d1-a32b-5f7def3279b2.png">
@@ -140,7 +140,9 @@ Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-To
  
 Les mines les plus tendres contiennent une proportion plus élevée de particules de graphite. C’est donc pour cette raison que les traces de ce type de crayon paraissent plus foncées sur le papier. À l’inverse, les mines les plus dures contiennent beaucoup de liants argileux et apparaissent plus claires. Cela explique également que les résistances de mines de crayon les plus tendres sont plus faibles que les mines de crayon les plus dures. En effet, sous la traction, les particules de graphite sont davantage écartées les unes des autres favorisant la déconnexion des voies de conduction : le courant est donc minime, la résistance quant à elle augmente.  Sous compression, les particules de graphite contenues dans la trace de crayon se rapprochent, facilitant la conduction du courant à travers le réseau de percolation : la résistance s’abaisse naturellement.
 
-Cette caractéristique est illustrée à travers la variation relative de résistance en fonction de la déformation du capteur. En effet, un crayon qui contient moins de particules de graphite comme le 2H dépose naturellement moins de graphite sur le substrat. Les variations de résistance sont donc plus significatives comme beaucoup de chemins de percolations sont créés ou rompus contrairement au 2B où les déformations n’induisent que de faibles variations relatives de résistance. 
+Cette caractéristique est illustrée à travers la variation relative de résistance en fonction de la déformation du capteur. En effet, un crayon qui contient moins de particules de graphite comme le 2H dépose naturellement moins de graphite sur le substrat. Les variations de résistance sont donc plus significatives comme beaucoup de chemins de percolations sont créés ou rompus contrairement au 2B où les déformations n’induisent que de faibles variations relatives de résistance.
+ 
+Il est également notable que le comportement en compression du flex sensor se rapproche de celui du KTY2000. Nous pouvons en conclure que notre capteur graphite présente des similarités de fonctionnnement qu'un capteur industriel. **Cela confirme l'idée que le low-tech est une alternative pertinente pour le futur de l'industrie.**
 
 ### 7.3 Regard critique sur les résultats <a id="SeptiemeSection3"></a>
 Il est important de souligner la variabilité des conditions expérimentales. Entre chaque relevé de points et malgré le fait que les pinces crocodiles sans dents étaient bien fixées, il se peut que l’attache du capteur ait bougée. Les résultats sont imprécis et pour certains discutables au vu de la qualité du montage mais suivent tout de même les lois physiques. 
