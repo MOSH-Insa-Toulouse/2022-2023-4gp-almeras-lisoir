@@ -107,7 +107,8 @@ Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physiq
 ### 5.2 Perçage et soudure <a id="CinquiemeSection2"></a>
 <p align="center"><img width="230" alt="image" src="https://user-images.githubusercontent.com/124166161/235507646-271bc19c-6042-436d-ab8f-c0edf065983b.png">
 
-Le percage des trous situées auc entre du PCB ont été réalisés avec un foret de 8mm tandis que les trous des pins arduino avec du 10mm.
+⌀ 0.8mm : AOP LTC1050, résistances et capacités
+⌀ 1.0mm : Broches de connexion de la carte Arduino Uno
 
 ## 6. Développement de l'interface en Python <a id="SixiemeSection"></a>
 L'interface développée répond à plusieurs problématiques et présente différentes fonctionnalités.
