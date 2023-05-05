@@ -102,7 +102,8 @@ Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résist
 ## 5. Fabrication du shield <a id="CinquiemeSection"></a>
 ### 5.1 Réalisation du PCB <a id="CinquiemeSection1"></a>
 
-Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physique et au Génie Électrique et Informatique de l'INSA Toulouse. Les manipulations ont été faites avec l'aide de Catherine Crouzet. La modélisation du PCB fait sur [KiCad](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/KiCad) a été imprimé sur du papier tranparent. Ce motif a été ensuite transféré par UVs  sur la plaquette. À l'aide d'un révelateur, la partie non insolée de la résine a été retirée. La plaquette d'expoxy a été ensuite placée dans un bain de perchlorure de fer pour que le cuivre non protégé par la résine soit retiré de la plaquette. Enfin, la plaque a été nettoyée des dernières traces de résine avec de l'acétone.
+Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physique et au Génie Électrique et Informatique de l'INSA Toulouse. Les manipulations ont été faites avec l'aide de Catherine Crouzet. La modélisation du PCB fait sur [KiCad](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/KiCad) a été imprimée sur du papier calque tranparent. Ce motif a été ensuite transféré par UVs sur la plaquette d'epoxy finement recouverte d'une couche de cuivre. À l'aide d'un révelateur, la partie non insolée de la résine a été retirée. La plaquette d'expoxy a été ensuite placée dans un bain de perchlorure de fer pour que le cuivre non protégé par la résine soit retiré de la plaquette. Enfin, la plaque a été nettoyée des dernières traces de résine avec de l'acétone.
+
 
 ### 5.2 Perçage et soudure <a id="CinquiemeSection2"></a>
 <p align="center"><img width="230" alt="image" src="https://user-images.githubusercontent.com/124166161/235507646-271bc19c-6042-436d-ab8f-c0edf065983b.png">
