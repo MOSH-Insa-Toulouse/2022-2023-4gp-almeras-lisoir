@@ -108,6 +108,7 @@ Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physiq
 <p align="center"><img width="230" alt="image" src="https://user-images.githubusercontent.com/124166161/235507646-271bc19c-6042-436d-ab8f-c0edf065983b.png">
 
 ⌀ 0.8mm : AOP LTC1050, résistances et capacités
+
 ⌀ 1.0mm : Broches de connexion de la carte Arduino Uno
 
 ## 6. Développement de l'interface en Python <a id="SixiemeSection"></a>
