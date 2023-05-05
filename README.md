@@ -84,6 +84,16 @@ Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résist
 
 ## 4. KiCad <a id="QuatriemeSection"></a>
 
+Voici une liste des différents composants présents sur notre PCB :
+
+x2 résistance 100kΩ
+x2 résistance 10kΩ
+x2 résistance 1kΩ
+x1 capacité 1μF
+x2 capacité 100nF
+x1 amplificateur opérationnel LTC1050
+x1 écran OLED I2C 0.91
+
 ### 4.1. Symboles et empreintes des composants <a id="QuatriemeSection1"></a>
 * Amplificateur LTC1050
 * Ecran OLED
