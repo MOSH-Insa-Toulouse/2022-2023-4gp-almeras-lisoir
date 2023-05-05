@@ -84,7 +84,7 @@ Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résist
 
 ## 4. KiCad <a id="QuatriemeSection"></a>
 
-Voici une liste des différents composants présents sur notre PCB :
+Voici la liste des différents composants présents sur notre PCB :
 
 - _x2 résistance 100kΩ_
 - _x2 résistance 10kΩ_
