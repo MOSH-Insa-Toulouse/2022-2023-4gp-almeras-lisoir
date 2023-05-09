@@ -108,10 +108,10 @@ Voici la liste des différents composants présents sur notre PCB :
 <p align="center"><img width="700" alt="image" src="https://user-images.githubusercontent.com/124165435/234853183-e293a26c-0e21-4e3e-af6e-2de6d5d85f0d.png">
 
 * Amplificateur LTC1050
-<p align="center"><img width="200" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/4e699e19-4f88-4130-a412-251529f5d3c9https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/00901127-7395-493f-8a9d-51669e231fd4">
+<p align="center"><img width="200" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/4e699e19-4f88-4130-a412-251529f5d3c9" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/00901127-7395-493f-8a9d-51669e231fd4">
 
 * Ecran OLED
-<p align="center"><img width="300" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/5af33168-c39c-4052-80d0-119bb8063c95https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/9bc60ae3-4dd5-4694-8d22-ddb3431aa5b5">
+<p align="center"><img width="300" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/5af33168-c39c-4052-80d0-119bb8063c95" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/9bc60ae3-4dd5-4694-8d22-ddb3431aa5b5">
 
 * Flex sensor
 <p align="center"><img width="300" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/e45657f0-eb76-4b49-b297-f7bdf9f01b27)">
@@ -140,15 +140,17 @@ Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physiq
 
 ⌀ 1.0mm : Broches de connexion de la carte Arduino Uno
 
+ 
 ## 6. Logiciel de simulation LTSpice <a id="SixiemeSection"></a>
  
 L'ensemble de notre circuit électronique a été simulé sur le logiciel LTSpice afin de comprendre et d'analyser son comportement dans des conditions réelles de valeurs de tension. Les différentes simulations ont permis d'une part de vérifier le bon fonctionnement du circuit et de chacun des composants intégrés, et d'autre part de comprendre l'utilité de chacun. Les images ci-dessous représentent la schématique du circuit ainsi qu'une réponse dans le temps de notre capteur à une stimulation.
  
-<p align="center"><img width="700" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/034001fe-f53c-4f8f-90dd-643e3f5e0450">
-<p align="center"><img width="700" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/69e8a973-ebff-4334-b3cd-306d7e803378">
+<p align="center"><img width="500" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/034001fe-f53c-4f8f-90dd-643e3f5e0450">
+<p align="center"><img width="400" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/69e8a973-ebff-4334-b3cd-306d7e803378">
 
  
 ## 7. Développement de l'interface en Python <a id="SeptiemeSection"></a>
+ 
 L'interface développée répond à plusieurs problématiques et présente différentes fonctionnalités.
 - Connexion automatique au port utilisé par la connexion avec l'Arduino (message pop-up selon le succès de la connection au port)
 - Etape préliminaire de calibration du capteur graphite
@@ -163,12 +165,14 @@ Le programme Python et le fichier Qt designer sont consultables [ici](https://gi
  
 Il est à noter que pour gérer à la fois la réception de données et l’affichage du graphique déroulant, nous avons mis en place un thread dans notre programme Python. Le multithreading permet à un système d'exploitation la mise en place de plusieurs tâches qui fonctionnent en même temps.
 
+
 ## 8. Tests et résultats <a id="HuitiemeSection"></a>
 
 Voici le setup d'utilisation du KTY2000.
 <p align="center"><img width="400" alt="image" src="https://user-images.githubusercontent.com/124166161/235499366-d5575645-165a-4a30-af12-c5741c56be6b.png">
 
 ### 8.1 Banc de test <a id="HuitiemeSection1"></a>
+ 
 Pour caractériser notre capteur, nous relevons la variation (relative ou non) de résistance de notre capteur en fonction de l'angle de flexion et de la déformation du capteur. Nous avons construit un banc de test avec l'aide de disques de papier cartonné de différents rayons de courbure, visibles ci-dessous. Les mesures ont été réalisées pour une déformation en traction et en compression, le tout en utilisant des crayons graphite de différentes duretés : 2B, HB et 2H.
 <p align="center"><img width="250" alt="image" src="https://user-images.githubusercontent.com/124166161/235498021-97354d74-e4f6-4dfd-b12c-69112cfb68dd.png">
 
@@ -187,6 +191,7 @@ Cette caractéristique est illustrée à travers la variation relative de résis
 Il est également notable que le comportement en compression du flex sensor se rapproche de celui du KTY2000. Nous pouvons en conclure que notre capteur graphite présente des similarités de fonctionnnement qu'un capteur industriel. **Cela confirme l'idée que le low-tech est une alternative pertinente pour le futur de l'industrie.**
 
 ### 8.3 Regard critique sur les résultats <a id="HuitiemeSection3"></a>
+ 
 Il est important de souligner la variabilité des conditions expérimentales. Entre chaque relevé de points et malgré le fait que les pinces crocodiles sans dents étaient bien fixées, il se peut que l’attache du capteur ait bougée. Les résultats sont imprécis et pour certains discutables au vu de la qualité du montage mais suivent tout de même les lois physiques. 
 
 Nous pourrions amener plusieurs pistes d'améliorations à notre projet :
@@ -197,5 +202,7 @@ Nous pourrions amener plusieurs pistes d'améliorations à notre projet :
 
 - Améliorer le setup expérimental en commençant par l'ergonomie de notre PCB afin de le rendre plus fonctionnel pour la réalisation des mesures de résistance. Penser à un meilleur emplacement pour les différents composants, à un système d'accroche pour l'écran OLED, mais aussi pour les pinces crocodile dans le but de limiter le plus possible la variabilité des conditions expérimentales. 
 
+ 
 ## 9. Datasheet <a id="NeuvièmeSection"></a>
+ 
 La datasheet du KTY2000 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf). Elle reprend tous les concepts physiques ainsi que les résultats de mesures et leur analyse. D'autres courbes illustrant la variation de résistance en fonction de l'angle de flexion y figurent, venant compléter les affirmations énoncées tout au long de ce rendu. 
