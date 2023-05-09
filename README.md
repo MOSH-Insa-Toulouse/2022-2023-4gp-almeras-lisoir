@@ -160,6 +160,8 @@ L'apparence de l'interface a été faite avec Qt Designer. Cet outil permet de c
 Le programme Python et le fichier Qt designer sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Interface%20Python).
 
 <p align="center"><img width="457" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124165435/92f333f9-cdeb-42c1-bef6-6a3f9498cc0c">
+ 
+Il est à noter que pour gérer à la fois la réception de données et l’affichage du graphique déroulant, nous avons mis en place un thread dans notre programme Python. Le multithreading permet à un système d'exploitation la mise en place de plusieurs tâches qui fonctionnent en même temps.
 
 ## 8. Tests et résultats <a id="HuitiemeSection"></a>
 
