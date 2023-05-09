@@ -103,10 +103,10 @@ Voici la liste des différents composants présents sur notre PCB :
 <p align="center"><img width="700" alt="image" src="https://user-images.githubusercontent.com/124165435/234853183-e293a26c-0e21-4e3e-af6e-2de6d5d85f0d.png">
 
 * Amplificateur LTC1050
-<p align="center"><img width="200" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/4e699e19-4f88-4130-a412-251529f5d3c9 https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/00901127-7395-493f-8a9d-51669e231fd4">
+<p align="center"><img width="200" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/4e699e19-4f88-4130-a412-251529f5d3c9https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/00901127-7395-493f-8a9d-51669e231fd4">
 
 * Ecran OLED
-<p align="center"><img width="300" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/5af33168-c39c-4052-80d0-119bb8063c95 https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/9bc60ae3-4dd5-4694-8d22-ddb3431aa5b5">
+<p align="center"><img width="300" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/5af33168-c39c-4052-80d0-119bb8063c95https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/9bc60ae3-4dd5-4694-8d22-ddb3431aa5b5">
 
 * Flex sensor
 <p align="center"><img width="300" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/e45657f0-eb76-4b49-b297-f7bdf9f01b27)">
@@ -132,8 +132,9 @@ Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physiq
 
 ⌀ 1.0mm : Broches de connexion de la carte Arduino Uno
 
-## 6. Développement de l'interface en Python <a id="SixiemeSection"></a>
-
+## 6. Logiciel de simulation LTSpice <a id="SixiemeSection"></a>
+L'amplificateur transimpédance sur le logiciel LTSpice afin de savoir le comportement que notre circuit aura une fois branché à de réelles valeurs de tension. Les différentes simulations réalisées sur le logiciel nous ont permis d'une part de vérifier le bon fonctionnement du circuit et de chacun des composants intégrés, et d'autre part de comprendre l'utilité de chacun. 
+ 
 ## 7. Développement de l'interface en Python <a id="SeptiemeSection"></a>
 L'interface développée répond à plusieurs problématiques et présente différentes fonctionnalités.
 - Connexion automatique au port utilisé par la connexion avec l'Arduino (message pop-up selon le succès de la connection au port)
