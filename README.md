@@ -51,6 +51,7 @@ Pour mener ce projet, nous avons d'abord suivi différents cours et TPs.
 - TP développement d'un capteur à jauge de contrainte à base de crayon graphite
 - TP conception d'un circuit analogique pour interfacer le capteur à jauge de contrainte
 - TP programmation de microcontrôleurs et développement d'un matériel open source
+- TP LTSpice afin de simuler le fonctionnement du circuit électronique comprenant la jauge de contrainte
 - TP shield électronique PCB dédié à l'interface du capteur de contrainte
 - TP réalisation du banc de test de la jauge de contrainte
 - Cours fiche technique de la jauge de contrainte
