@@ -16,12 +16,13 @@
 * [5. Fabrication du shield](#CinquiemeSection)
   * [5.1. Réalisation du PCB](#CinquiemeSection1)
   * [5.2. Perçage et soudure](#CinquiemeSection2)
-* [6. Développement de l'interface en Python](#SixiemeSection)
-* [7. Tests et résultats](#SeptiemeSection)
-  * [7.1. Banc de test](#SeptiemeSection1)
-  * [7.2. Résultats obtenus et analyses](#SeptiemeSection2)
-  * [7.3. Regard critique sur les résultats](#SeptiemeSection3)
-* [8. Datasheet](#HuitiemeSection)
+* [6. Logiciel de simulation LTSpice](#SixiemeSection)
+* [7. Développement de l'interface en Python](#SeptiemeSection)
+* [8. Tests et résultats](#HuitiemeSection)
+  * [8.1. Banc de test](#HuitiemeSection1)
+  * [8.2. Résultats obtenus et analyses](#HuitiemeSection2)
+  * [8.3. Regard critique sur les résultats](#HuitiemeSection3)
+* [9. Datasheet](#NeuvièmeSection)
 
 
 
@@ -132,6 +133,8 @@ Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physiq
 ⌀ 1.0mm : Broches de connexion de la carte Arduino Uno
 
 ## 6. Développement de l'interface en Python <a id="SixiemeSection"></a>
+
+## 7. Développement de l'interface en Python <a id="SeptiemeSection"></a>
 L'interface développée répond à plusieurs problématiques et présente différentes fonctionnalités.
 - Connexion automatique au port utilisé par la connexion avec l'Arduino (message pop-up selon le succès de la connection au port)
 - Etape préliminaire de calibration du capteur graphite
@@ -144,17 +147,17 @@ Le programme Python et le fichier Qt designer sont consultables [ici](https://gi
 
 <p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124165435/235492835-74331426-96cb-40d1-a32b-5f7def3279b2.png">
 
-## 7. Tests et résultats <a id="SeptiemeSection"></a>
+## 8. Tests et résultats <a id="HuitiemeSection"></a>
 
 Voici le setup d'utilisation du KTY2000.
 <p align="center"><img width="400" alt="image" src="https://user-images.githubusercontent.com/124166161/235499366-d5575645-165a-4a30-af12-c5741c56be6b.png">
 
-### 7.1 Banc de test <a id="SeptiemeSection1"></a>
+### 8.1 Banc de test <a id="HuitiemeSection1"></a>
 Pour caractériser notre capteur, nous relevons la variation (relative ou non) de résistance de notre capteur en fonction de l'angle de flexion et de la déformation du capteur. Nous avons construit un banc de test avec l'aide de disques de papier cartonné de différents rayons de courbure, visibles ci-dessous. Les mesures ont été réalisées pour une déformation en traction et en compression, le tout en utilisant des crayons graphite de différentes duretés : 2B, HB et 2H.
 <p align="center"><img width="250" alt="image" src="https://user-images.githubusercontent.com/124166161/235498021-97354d74-e4f6-4dfd-b12c-69112cfb68dd.png">
 
  
-### 7.2 Résultats obtenus et analyses <a id="SeptiemeSection2"></a>
+### 8.2 Résultats obtenus et analyses <a id="HuitiemeSection2"></a>
 Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
 
  Les deux graphes suivant représentent la variation de la résistance relative (en %) en fonction de la déformation appliquée - compression et traction.
@@ -167,7 +170,7 @@ Cette caractéristique est illustrée à travers la variation relative de résis
  
 Il est également notable que le comportement en compression du flex sensor se rapproche de celui du KTY2000. Nous pouvons en conclure que notre capteur graphite présente des similarités de fonctionnnement qu'un capteur industriel. **Cela confirme l'idée que le low-tech est une alternative pertinente pour le futur de l'industrie.**
 
-### 7.3 Regard critique sur les résultats <a id="SeptiemeSection3"></a>
+### 8.3 Regard critique sur les résultats <a id="HuitiemeSection3"></a>
 Il est important de souligner la variabilité des conditions expérimentales. Entre chaque relevé de points et malgré le fait que les pinces crocodiles sans dents étaient bien fixées, il se peut que l’attache du capteur ait bougée. Les résultats sont imprécis et pour certains discutables au vu de la qualité du montage mais suivent tout de même les lois physiques. 
 
 Nous pourrions amener plusieurs pistes d'améliorations à notre projet :
@@ -178,5 +181,5 @@ Nous pourrions amener plusieurs pistes d'améliorations à notre projet :
 
 - Améliorer le setup expérimental en commençant par l'ergonomie de notre PCB afin de le rendre plus fonctionnel pour la réalisation des mesures de résistance. Penser à un meilleur emplacement pour les différents composants, à un système d'accroche pour l'écran OLED, mais aussi pour les pinces crocodile dans le but de limiter le plus possible la variabilité des conditions expérimentales. 
 
-## 8. Datasheet <a id="HuitiemeSection"></a>
+## 9. Datasheet <a id="NeuvièmeSection"></a>
 La datasheet du KTY2000 est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf). Elle reprend tous les concepts physiques ainsi que les résultats de mesures et leur analyse. D'autres courbes illustrant la variation de résistance en fonction de l'angle de flexion y figurent, venant compléter les affirmations énoncées tout au long de ce rendu. 
