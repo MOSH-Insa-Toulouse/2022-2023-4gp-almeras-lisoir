@@ -74,14 +74,17 @@ Pour mener ce projet, nous avons d'abord suivi différents cours et TPs.
 * La datasheet du capteur de contrainte
 
 ### 2.2 Révisions des livrables du projet <a id="DeuxièmeSection2"></a>
+ 
 Notre binôme ne possède aucun téléphone Android et il n'était donc pas possible de créer une application APK et de transmettre les données par Bluetooth. Nous avons du rediscuter les livrables avc nos responsables de projet. Finalement, nous développons une interface en Python et le module Bluetooth est supprimé. En effet, l'interface permet la réception des données envoyées par la carte Arduino, via une communication USB entre un ordinateur et la carte (port série). L'interface permet également la calibration du capteur graphite. De plus, un écran OLED affichera en temps réel de la résistance du capteur KTY2000 et d'un flex sensor Spectra Symbol.
 Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteur graphite. Lorsque le flex-sensor est plié, sa variation de résistance suit la contrainte de flexion.
 
+ 
 ## 3. Carte Arduino UNO et code associé <a id="TroisièmeSection"></a>
 
 Le code Arduino est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Arduino).
 Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résistance-angle du flex sensor, la réception des mesures faites par les deux capteurs, l'envoi de données via un port série.
 
+ 
 ## 4. KiCad <a id="QuatriemeSection"></a>
 
 Voici la liste des différents composants présents sur notre PCB :
@@ -95,11 +98,13 @@ Voici la liste des différents composants présents sur notre PCB :
 - _x1 écran OLED I2C 0.91_
 
 ### 4.1. Symboles et empreintes des composants <a id="QuatriemeSection1"></a>
+ 
 * Amplificateur LTC1050
 * Ecran OLED
 * Flex sensor
 
 ### 4.2. Schématique <a id="QuatriemeSection2"></a>
+ 
 <p align="center"><img width="700" alt="image" src="https://user-images.githubusercontent.com/124165435/234853183-e293a26c-0e21-4e3e-af6e-2de6d5d85f0d.png">
 
 * Amplificateur LTC1050
@@ -113,19 +118,22 @@ Voici la liste des différents composants présents sur notre PCB :
 
 
 ### 4.3. Placement des composants <a id="QuatriemeSection3"></a>
+ 
 <p align="center"><img width="448" alt="image" src="https://user-images.githubusercontent.com/124165435/234853043-2a99e37e-7576-4bbf-b96a-2a48ab394477.png">
  
 ### 4.4. Visualisation 3D <a id="QuatriemeSection4"></a>
+ 
 <p align="center"><img width="350" alt="image" src="https://user-images.githubusercontent.com/124165435/234853290-a2071ead-7724-451d-831e-413aeb7c9c3b.png">
 
 
 ## 5. Fabrication du shield <a id="CinquiemeSection"></a>
+ 
 ### 5.1 Réalisation du PCB <a id="CinquiemeSection1"></a>
 
 Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physique et au Génie Électrique et Informatique de l'INSA Toulouse. Les manipulations ont été faites avec l'aide de Catherine Crouzet. La modélisation du PCB fait sur [KiCad](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/KiCad) a été imprimée sur du papier calque tranparent. Ce motif a été ensuite transféré par UVs sur la plaquette d'epoxy finement recouverte d'une couche de cuivre. À l'aide d'un révelateur, la partie non insolée de la résine a été retirée. La plaquette d'expoxy a été ensuite placée dans un bain de perchlorure de fer pour que le cuivre non protégé par la résine soit retiré de la plaquette. Enfin, la plaque a été nettoyée des dernières traces de résine avec de l'acétone.
 
-
 ### 5.2 Perçage et soudure <a id="CinquiemeSection2"></a>
+ 
 <p align="center"><img width="230" alt="image" src="https://user-images.githubusercontent.com/124166161/235507646-271bc19c-6042-436d-ab8f-c0edf065983b.png">
 
 ⌀ 0.8mm : AOP LTC1050, résistances et capacités
@@ -133,9 +141,12 @@ Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physiq
 ⌀ 1.0mm : Broches de connexion de la carte Arduino Uno
 
 ## 6. Logiciel de simulation LTSpice <a id="SixiemeSection"></a>
-L'ensemble de notre circuit électronique a été simulé sur le logiciel LTSpice afin de comprendre et d'analyser son comportement dans des conditions réelles de valeurs de tension. Les différentes simulations ont permis d'une part de vérifier le bon fonctionnement du circuit et de chacun des composants intégrés, et d'autre part de comprendre l'utilité de chacun. Les images ci-dessous représentent la schématique du circuit et une réponse de notre capteur à une stimulation.
-p align="center"><img width="500" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/034001fe-f53c-4f8f-90dd-643e3f5e0450">
-p align="center"><img width="500" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/69e8a973-ebff-4334-b3cd-306d7e803378">
+ 
+L'ensemble de notre circuit électronique a été simulé sur le logiciel LTSpice afin de comprendre et d'analyser son comportement dans des conditions réelles de valeurs de tension. Les différentes simulations ont permis d'une part de vérifier le bon fonctionnement du circuit et de chacun des composants intégrés, et d'autre part de comprendre l'utilité de chacun. Les images ci-dessous représentent la schématique du circuit ainsi qu'une réponse dans le temps de notre capteur à une stimulation.
+ 
+<p align="center"><img width="700" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/034001fe-f53c-4f8f-90dd-643e3f5e0450">
+<p align="center"><img width="700" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/69e8a973-ebff-4334-b3cd-306d7e803378">
+
  
 ## 7. Développement de l'interface en Python <a id="SeptiemeSection"></a>
 L'interface développée répond à plusieurs problématiques et présente différentes fonctionnalités.
