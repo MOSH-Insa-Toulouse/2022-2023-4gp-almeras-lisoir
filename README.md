@@ -133,7 +133,9 @@ Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physiq
 ⌀ 1.0mm : Broches de connexion de la carte Arduino Uno
 
 ## 6. Logiciel de simulation LTSpice <a id="SixiemeSection"></a>
-L'amplificateur transimpédance sur le logiciel LTSpice afin de savoir le comportement que notre circuit aura une fois branché à de réelles valeurs de tension. Les différentes simulations réalisées sur le logiciel nous ont permis d'une part de vérifier le bon fonctionnement du circuit et de chacun des composants intégrés, et d'autre part de comprendre l'utilité de chacun. 
+L'ensemble de notre circuit électronique a été simulé sur le logiciel LTSpice afin de comprendre et d'analyser son comportement dans des conditions réelles de valeurs de tension. Les différentes simulations ont permis d'une part de vérifier le bon fonctionnement du circuit et de chacun des composants intégrés, et d'autre part de comprendre l'utilité de chacun. Les images ci-dessous représentent la schématique du circuit et une réponse de notre capteur à une stimulation.
+p align="center"><img width="500" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/034001fe-f53c-4f8f-90dd-643e3f5e0450">
+p align="center"><img width="500" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/69e8a973-ebff-4334-b3cd-306d7e803378">
  
 ## 7. Développement de l'interface en Python <a id="SeptiemeSection"></a>
 L'interface développée répond à plusieurs problématiques et présente différentes fonctionnalités.
