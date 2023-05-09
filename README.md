@@ -100,6 +100,16 @@ Voici la liste des différents composants présents sur notre PCB :
 ### 4.2. Schématique <a id="QuatriemeSection2"></a>
 <p align="center"><img width="700" alt="image" src="https://user-images.githubusercontent.com/124165435/234853183-e293a26c-0e21-4e3e-af6e-2de6d5d85f0d.png">
 
+* Amplificateur LTC1050
+<p align="center"><img width="200" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/4e699e19-4f88-4130-a412-251529f5d3c9 https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/00901127-7395-493f-8a9d-51669e231fd4">
+
+* Ecran OLED
+<p align="center"><img width="300" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/5af33168-c39c-4052-80d0-119bb8063c95 https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/9bc60ae3-4dd5-4694-8d22-ddb3431aa5b5">
+
+* Flex sensor
+<p align="center"><img width="300" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/e45657f0-eb76-4b49-b297-f7bdf9f01b27)">
+
+
 ### 4.3. Placement des composants <a id="QuatriemeSection3"></a>
 <p align="center"><img width="448" alt="image" src="https://user-images.githubusercontent.com/124165435/234853043-2a99e37e-7576-4bbf-b96a-2a48ab394477.png">
  
