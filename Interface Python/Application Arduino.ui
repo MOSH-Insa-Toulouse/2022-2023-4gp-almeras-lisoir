@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>925</width>
-    <height>724</height>
+    <width>923</width>
+    <height>710</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -82,7 +82,7 @@
       <x>10</x>
       <y>250</y>
       <width>381</width>
-      <height>201</height>
+      <height>231</height>
      </rect>
     </property>
     <property name="title">
@@ -94,7 +94,7 @@
        <x>10</x>
        <y>30</y>
        <width>361</width>
-       <height>151</height>
+       <height>181</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -107,6 +107,29 @@
       </item>
       <item>
        <widget class="QLabel" name="label_resistance_graphite">
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Variation relative de la résistance (%)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_resistance_relative_graphite">
         <property name="autoFillBackground">
          <bool>true</bool>
         </property>
@@ -197,9 +220,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>460</y>
+      <y>490</y>
       <width>381</width>
-      <height>201</height>
+      <height>171</height>
      </rect>
     </property>
     <property name="title">
@@ -211,7 +234,7 @@
        <x>10</x>
        <y>30</y>
        <width>361</width>
-       <height>151</height>
+       <height>121</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -357,7 +380,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>925</width>
+     <width>923</width>
      <height>31</height>
     </rect>
    </property>

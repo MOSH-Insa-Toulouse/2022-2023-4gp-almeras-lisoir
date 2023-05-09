@@ -16,7 +16,7 @@ from PyQt5.QtWidgets import QMessageBox
 from random import randint
 
 
-qtCreatorFile = "application.ui" # Enter file here.
+qtCreatorFile = "Application Arduino.ui" # Enter file here.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 #Fonction servant à convertir la résistance d'un capteur en son angle de flexion
@@ -38,6 +38,13 @@ def translate(value, fromMin, fromMax, from0, toMin, toMax,to0):
               valueScaled = float(value - from0) / float(fromMax - from0)
           
               return to0 + (valueScaled * (toMax-to0))
+
+#Fonction calculant le changement relatif en pourcentage de la résistance du capteur graphite par rapport à sa résistance R0
+def variation_relative(R0, Rmes):
+    if R0!=0:
+        return abs((R0-Rmes)/R0)*100
+    else:
+        pass
           
         
     
@@ -77,13 +84,19 @@ class Window(QtWidgets.QMainWindow, Ui_MainWindow):
          self.R0_graphite = self.spinBox_R0_graphite.value()
          self.Rmax_graphite = self.spinBox_Rmax_graphite.value()
          self.Rmin_graphite = self.spinBox_Rmin_graphite.value()
+         
         
         
     #Calcul et affichage de la valeur de l'angle du capteur en fonction de la résistance pour chaque capteur   
     def calibrate(self,data):
         try:    
             self.angle_graphite = translate(data[0],  self.Rmin_graphite, self.Rmax_graphite, self.R0_graphite,-90, 90, 0)
-            self.label_angle_graphite.setText(str(self.angle_graphite))
+            self.label_angle_graphite.setText(str(format(self.angle_graphite,'.2f')))
+           
+            R_relative=variation_relative(self.R0_graphite, data[0]) 
+            if type(R_relative) != type(None) :
+                R_relative=format(R_relative,'.2f') #Limiter le format du résultat à 2 digits après la virgule
+                self.label_resistance_relative_graphite.setText(str(R_relative))
         except:
             pass
     
@@ -130,9 +143,11 @@ class Window(QtWidgets.QMainWindow, Ui_MainWindow):
     #Affichage de la valeur réelle des résistances envoyées par l'Arduino et également visible sur l'écran OLED
     def actual_values(self, vals):
         if vals != []:
-            self.label_resistance_graphite.setText(str(vals[0]))       
-            self.label_resistance_flex.setText(str(vals[1]))
-            self.label_angle_flex.setText(str(vals[2]))
+            self.label_resistance_graphite.setText(str(format(vals[0],'.2f')))       
+            self.label_resistance_flex.setText(str(format(vals[1],'.2f')))
+            self.label_angle_flex.setText(str(format(vals[2],'.2f')))
+            
+            
         
      
     #Tracé de l'évolution de la résistance du capteur graphite
