@@ -159,7 +159,7 @@ L'interface développée répond à plusieurs problématiques et présente diff�
 L'apparence de l'interface a été faite avec Qt Designer. Cet outil permet de créer une interface utilisateur "what-you-see-is-what-you-get" (WYSIWYG), ce qui permet un gain de temps et d'efficacité. 
 Le programme Python et le fichier Qt designer sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Interface%20Python).
 
-<p align="center"><img width="461" alt="image" src="https://user-images.githubusercontent.com/124165435/235492835-74331426-96cb-40d1-a32b-5f7def3279b2.png">
+<p align="center"><img width="457" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124165435/92f333f9-cdeb-42c1-bef6-6a3f9498cc0c">
 
 ## 8. Tests et résultats <a id="HuitiemeSection"></a>
 
