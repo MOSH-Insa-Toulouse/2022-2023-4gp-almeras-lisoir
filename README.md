@@ -34,14 +34,12 @@ Ce projet s'étend sur le deuxième semestre de l'année 2022-2023 et a pour but
 
 ### 1.1 Caractéristiques et travaux de recherche préliminaires sur le capteur <a id="PremiereSection1"></a>
 
-Le capteur sur lequel nous avons mené nos recherches . En effet, un article scientifique publié en 2014 met en évidence que du graphite déposé sur une bande de papier peut servir de jauge de contrainte. Le projet Capteur s'inspire largement des études et expériences présentées dans ce papier.
-
-Le KTY2000 est un exemple de technologie low-tech base de graphite. Ce projet s’inspire du travail mené par plusieurs scientifiques et publié dans [cet article](https://www.nature.com/articles/srep03812) en 2014. En effet, les études ont révélé les nombreux avantages du carbone graphite. L’électronique à base de papier attire de plus en plus les ingénieur.es de par sa facilité d’approvisionnement, de fabrication et son faible coût. Il suffit dans notre cas de déposer une fine couche de graphite sur le substrat naturellement poreux pour former la base du capteur. Les mines de crayon sont constituées de réseaux percolés de fines poudres de graphite liées entre elles par des argiles, permettant d’obtenir après dépôt de fins films conducteurs non fabriqués en laboratoire. 
+Le KTY2000 est un exemple de technologie low-tech à base de graphite. Ce projet s’inspire du travail mené par plusieurs scientifiques et publié dans [cet article](https://www.nature.com/articles/srep03812) en 2014. En effet, les études ont révélé les nombreux avantages du carbone graphite. L’électronique à base de papier attire de plus en plus les ingénieur.es de par sa facilité d’approvisionnement, de fabrication et son faible coût. Il suffit dans notre cas de déposer une fine couche de graphite sur le substrat naturellement poreux pour former la base du capteur. Les mines de crayon sont constituées de réseaux percolés de fines poudres de graphite liées entre elles par des argiles, permettant d’obtenir après dépôt de fins films conducteurs non fabriqués en laboratoire. 
 
 Le système à l’étude est granulaire, autrement dit il existe une dépendance entre la conductivité électrique et l’espace moyen entre les nanoparticules de graphite. Ainsi, une déformation de la feuille de papier va modifier la conductivité globale de la couche de graphite, induisant des changements de résistances réversibles lors des déformations en compression ou en traction. Ceci constitue en fait le principe d'une jauge de contrainte. 
-L’expérience est réalisée avec différentes duretés de mine de crayon  (2H, HB, 2B). Les mesure de résistance pour chaque crayon sont réalisées en fonction de différents rayons de courbure (soit la déformation) ou de l’angle de flexion. Cela permet une caractérisation complète de chaque type de crayon. 
+L’expérience est réalisée avec différentes duretés de mine de crayon (2H, HB, 2B). Les mesures de résistance pour chaque crayon sont réalisées en fonction de différents rayons de courbure (soit la déformation) ou de l’angle de flexion de notre capteur. Cela permet une caractérisation complète de chaque type de crayon. 
 
-Dans notre cas, les traces de crayon sont déposées sur du papier comme vu ci-dessous. Ceci constitue le capteur et sera connecté à un système de mesures externe via des pinces crocodiles reliées à un PCB et branché sur une carte Arduino Uno.
+Dans notre cas, les traces de crayon sont déposées sur du papier comme vu ci-dessous. Une fois colorié, le capteur est connecté à un système de mesures externe via des pinces crocodiles reliées à un PCB et branché sur une carte Arduino Uno.
 
 <p align="center"><img width="329" alt="image" src="https://user-images.githubusercontent.com/124165435/234648698-2a138793-281e-4adf-a231-edec8a0e3931.png">
 
@@ -75,10 +73,9 @@ Pour mener ce projet, nous avons d'abord suivi différents cours et TPs.
 
 ### 2.2 Révisions des livrables du projet <a id="DeuxièmeSection2"></a>
  
-Notre binôme ne possède aucun téléphone Android et il n'était donc pas possible de créer une application APK et de transmettre les données par Bluetooth. Nous avons du rediscuter les livrables avc nos responsables de projet. Finalement, nous développons une interface en Python et le module Bluetooth est supprimé. En effet, l'interface permet la réception des données envoyées par la carte Arduino, via une communication USB entre un ordinateur et la carte (port série). L'interface permet également la calibration du capteur graphite. De plus, un écran OLED affichera en temps réel de la résistance du capteur KTY2000 et d'un flex sensor Spectra Symbol.
-Le flex-sensor est un capteur ayant les mêmes fonctionnalités que notre capteur graphite. Lorsque le flex-sensor est plié, sa variation de résistance suit la contrainte de flexion.
+Notre binôme ne possède aucun téléphone Android et il n'était donc pas possible de créer une application APK et de transmettre les données par Bluetooth. Nous avons dû rediscuter les livrables avec nos responsables de projet. Finalement, nous développons une interface en Python et le module Bluetooth est supprimé. En effet, le code python créé permet la réception des données envoyées par la carte Arduino Uno, via une communication USB entre un ordinateur et la carte (port série). L'interface, confectionnée avec Qtdesigner, permet également la calibration du capteur graphite et respecte les livrables initiaux concernant l'affichage des valeurs (relatives ou non) de résistance de nos deux capteurs présents sur le setup : le KTY2000 et un flex-sensor de chez Spectral Symbol. Ce dernier est un capteur ayant les mêmes fonctionnalités que notre capteur graphite. Lorsque le flex-sensor est plié, sa variation de résistance suit la contrainte de flexion. De plus, un écran OLED affichera en temps réel de la résistance du capteur KTY2000 et celle du flex-sensor.
 
- 
+
 ## 3. Carte Arduino UNO et code associé <a id="TroisièmeSection"></a>
 
 Le code Arduino est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Arduino).
