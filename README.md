@@ -79,7 +79,7 @@ Notre binôme ne possède aucun téléphone Android et il n'était donc pas poss
 ## 3. Carte Arduino UNO et code associé <a id="TroisièmeSection"></a>
 
 Le code Arduino est consultable [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/tree/main/Arduino).
-Ce code permet la gestion de l'affichage de l'écran OLED, la conversion résistance-angle du flex sensor, la réception des mesures faites par les deux capteurs, l'envoi de données via un port série.
+Ce code permet la réception des mesures faites par les deux capteurs, la conversion résistance-angle du flex-sensor et celle tension-résistance pour le KTY2000, la gestion de l'affichage sur l'écran OLED et l'envoi de données via un port série.
 
  
 ## 4. KiCad <a id="QuatriemeSection"></a>
@@ -153,9 +153,9 @@ L'ensemble de notre circuit électronique a été simulé sur le logiciel LTSpic
  
 L'interface développée répond à plusieurs problématiques et présente différentes fonctionnalités.
 - Connexion automatique au port utilisé par la connexion avec l'Arduino (message pop-up selon le succès de la connection au port)
-- Etape préliminaire de calibration du capteur graphite
-- Affichage de deux graphiques défilant exprimant la variation de la résistance du flex sensor et du capteur graphite
-- Relecture et affichage en temps réel des données reçues pour les deux capteurs
+- Étape préliminaire de calibration du capteur graphite pour l'obtension de son angle de flexion
+- Relecture et affichage en temps réel des données reçues pour les deux capteurs après traitement (résistance, variation relative et angle de flexion)
+- Affichage de deux graphiques défilant exprimant la variation de la résistance du flex-sensor et du capteur graphite
 - Fermeture de la fenêtre et interruption de la communication avec le bouton Quit
 
 L'apparence de l'interface a été faite avec Qt Designer. Cet outil permet de créer une interface utilisateur "what-you-see-is-what-you-get" (WYSIWYG), ce qui permet un gain de temps et d'efficacité. 
@@ -163,7 +163,7 @@ Le programme Python et le fichier Qt designer sont consultables [ici](https://gi
 
 <p align="center"><img width="457" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124165435/92f333f9-cdeb-42c1-bef6-6a3f9498cc0c">
  
-Il est à noter que pour gérer à la fois la réception de données et l’affichage du graphique déroulant, nous avons mis en place un thread dans notre programme Python. Le multithreading permet à un système d'exploitation la mise en place de plusieurs tâches qui fonctionnent en même temps.
+Il est à noter que pour gérer à la fois la réception de données en continu et l’affichage du graphique déroulant, nous avons mis en place un thread dans notre programme Python. Le multithreading permet à un système d'exploitation la mise en place de plusieurs tâches qui fonctionnent en même temps.
 
 
 ## 8. Tests et résultats <a id="HuitiemeSection"></a>
@@ -175,12 +175,11 @@ Voici le setup d'utilisation du KTY2000.
  
 Pour caractériser notre capteur, nous relevons la variation (relative ou non) de résistance de notre capteur en fonction de l'angle de flexion et de la déformation du capteur. Nous avons construit un banc de test avec l'aide de disques de papier cartonné de différents rayons de courbure, visibles ci-dessous. Les mesures ont été réalisées pour une déformation en traction et en compression, le tout en utilisant des crayons graphite de différentes duretés : 2B, HB et 2H.
 <p align="center"><img width="250" alt="image" src="https://user-images.githubusercontent.com/124166161/235498021-97354d74-e4f6-4dfd-b12c-69112cfb68dd.png">
-
  
 ### 8.2 Résultats obtenus et analyses <a id="HuitiemeSection2"></a>
 Les résultats de mesure sont consultables [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Relev%C3%A9%20de%20mesures.xlsx).
 
- Les deux graphes suivant représentent la variation de la résistance relative (en %) en fonction de la déformation appliquée - compression et traction.
+Les deux graphes suivant représentent la variation de la résistance relative (en %) en fonction de la déformation appliquée - compression et traction.
 <p align="center"><img width="649" alt="image" src="https://user-images.githubusercontent.com/124165435/235679810-8c07bf9b-abfc-42d7-b863-36cdf839b4a3.png">
 <p align="center"><img width="649" alt="image" src="https://user-images.githubusercontent.com/124165435/235679986-d3eed696-fc22-417e-b762-bcdb572f7c95.png">
  
@@ -188,7 +187,7 @@ Les mines les plus tendres contiennent une proportion plus élevée de particule
 
 Cette caractéristique est illustrée à travers la variation relative de résistance en fonction de la déformation du capteur. En effet, un crayon qui contient moins de particules de graphite comme le 2H dépose naturellement moins de graphite sur le substrat. Les variations de résistance sont donc plus significatives comme beaucoup de chemins de percolations sont créés ou rompus contrairement au 2B où les déformations n’induisent que de faibles variations relatives de résistance.
  
-Il est également notable que le comportement en compression du flex sensor se rapproche de celui du KTY2000. Nous pouvons en conclure que notre capteur graphite présente des similarités de fonctionnnement qu'un capteur industriel. **Cela confirme l'idée que le low-tech est une alternative pertinente pour le futur de l'industrie.**
+Il est également notable que le comportement en compression du flex-sensor se rapproche de celui du KTY2000. Nous pouvons en conclure que notre capteur graphite présente des similarités de fonctionnnement qu'un capteur industriel. **Cela confirme l'idée que le low-tech est une alternative pertinente pour le futur de l'industrie.**
 
 ### 8.3 Regard critique sur les résultats <a id="HuitiemeSection3"></a>
  
