@@ -143,7 +143,7 @@ Le PCB a été fabriqué grâce au matériel mis à disposition au Génie Physiq
  
 ## 6. Logiciel de simulation LTSpice <a id="SixiemeSection"></a>
  
-L'ensemble de notre circuit électronique a été simulé sur le logiciel LTSpice afin de comprendre et d'analyser son comportement dans des conditions réelles de valeurs de tension. Les différentes simulations ont permis d'une part de vérifier le bon fonctionnement du circuit et de chacun des composants intégrés, et d'autre part de comprendre l'utilité de chacun. Les images ci-dessous représentent la schématique du circuit ainsi qu'une réponse dans le temps de notre capteur à une stimulation.
+L'ensemble de notre circuit électronique a été simulé sur le logiciel LTSpice afin de comprendre et d'analyser son comportement dans des conditions réelles de valeurs de tension. Les différentes simulations ont permis d'une part de vérifier le bon fonctionnement du circuit et de chacun des composants intégrés, et d'autre part de comprendre l'utilité de chacun. Les images ci-dessous représentent la schématique du circuit ainsi qu'une réponse dans le temps de notre capteur à une stimulation. Se référer à la datasheet [ici](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/blob/main/Datasheet/Datasheet%20KTY2000.pdf) pour de plus amples informations.
  
 <p align="center"><img width="500" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/034001fe-f53c-4f8f-90dd-643e3f5e0450">
 <p align="center"><img width="400" alt="image" src="https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-almeras-lisoir/assets/124166161/69e8a973-ebff-4334-b3cd-306d7e803378">
