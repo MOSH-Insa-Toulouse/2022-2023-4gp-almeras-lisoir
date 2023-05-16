@@ -29,7 +29,7 @@ def translate(value, fromMin, fromMax, from0, toMin, toMax,to0):
         
             valueScaled = float(value - fromMin) / float(from0-fromMin)
         
-            return toMin + (valueScaled * (to0-toMin))
+            return to0 + (valueScaled * (toMin-to0))
         
     if value <fromMax and value>from0 :
                 
@@ -37,7 +37,7 @@ def translate(value, fromMin, fromMax, from0, toMin, toMax,to0):
           
               valueScaled = float(value - from0) / float(fromMax - from0)
           
-              return to0 + (valueScaled * (toMax-to0))
+              return to0 - (valueScaled * (-toMax-to0))
 
 #Fonction calculant le changement relatif en pourcentage de la résistance du capteur graphite par rapport à sa résistance R0
 def variation_relative(R0, Rmes):
@@ -90,7 +90,7 @@ class Window(QtWidgets.QMainWindow, Ui_MainWindow):
     #Calcul et affichage de la valeur de l'angle du capteur en fonction de la résistance pour chaque capteur   
     def calibrate(self,data):
         try:    
-            self.angle_graphite = translate(data[0],  self.Rmin_graphite, self.Rmax_graphite, self.R0_graphite,-90, 90, 0)
+            self.angle_graphite = translate(data[0],  self.Rmin_graphite, self.Rmax_graphite, self.R0_graphite,90, -90, 0)
             self.label_angle_graphite.setText(str(format(self.angle_graphite,'.2f')))
            
             R_relative=variation_relative(self.R0_graphite, data[0]) 
